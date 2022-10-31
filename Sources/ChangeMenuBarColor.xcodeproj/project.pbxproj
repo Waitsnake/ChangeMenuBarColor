@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC9D8C0A291013420093C417 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D8C09291013420093C417 /* main.swift */; };
+		CCC80EED2910141800B0B224 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = CCC80EEC2910141800B0B224 /* ArgumentParser */; };
+		CCC80EEF2910143800B0B224 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC80EEE2910143800B0B224 /* Log.swift */; };
+		CCC80EF42910144500B0B224 /* ImageFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC80EF02910144500B0B224 /* ImageFunctions.swift */; };
+		CCC80EF52910144500B0B224 /* NSImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC80EF12910144500B0B224 /* NSImage+Extensions.swift */; };
+		CCC80EF62910144500B0B224 /* NSScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC80EF22910144500B0B224 /* NSScreen+Extensions.swift */; };
+		CCC80EF72910144500B0B224 /* NSColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC80EF32910144500B0B224 /* NSColor+HEX.swift */; };
+		CCC80EF92910145800B0B224 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC80EF82910145800B0B224 /* Command.swift */; };
+		CCC80EFC2910146100B0B224 /* SolidColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC80EFA2910146100B0B224 /* SolidColor.swift */; };
+		CCC80EFD2910146100B0B224 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC80EFB2910146100B0B224 /* Gradient.swift */; };
+		CCC80F00291014FD00B0B224 /* Rainbow in Frameworks */ = {isa = PBXBuildFile; productRef = CCC80EFF291014FD00B0B224 /* Rainbow */; };
+		CCC80F06291015B900B0B224 /* Files in Frameworks */ = {isa = PBXBuildFile; productRef = CCC80F05291015B900B0B224 /* Files */; };
+		CCC80F082910160F00B0B224 /* ChangeMenuBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC80F072910160F00B0B224 /* ChangeMenuBarColor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC9D8C04291013420093C417 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CC9D8C06291013420093C417 /* ChangeMenuBarColor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChangeMenuBarColor; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9D8C09291013420093C417 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CCC80EEE2910143800B0B224 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Log.swift; path = "Supporting files/Log.swift"; sourceTree = "<group>"; };
+		CCC80EF02910144500B0B224 /* ImageFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageFunctions.swift; path = Extensions/ImageFunctions.swift; sourceTree = "<group>"; };
+		CCC80EF12910144500B0B224 /* NSImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSImage+Extensions.swift"; path = "Extensions/NSImage+Extensions.swift"; sourceTree = "<group>"; };
+		CCC80EF22910144500B0B224 /* NSScreen+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSScreen+Extensions.swift"; path = "Extensions/NSScreen+Extensions.swift"; sourceTree = "<group>"; };
+		CCC80EF32910144500B0B224 /* NSColor+HEX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSColor+HEX.swift"; path = "Extensions/NSColor+HEX.swift"; sourceTree = "<group>"; };
+		CCC80EF82910145800B0B224 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Command.swift; path = Commands/Abstract/Command.swift; sourceTree = "<group>"; };
+		CCC80EFA2910146100B0B224 /* SolidColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SolidColor.swift; path = Commands/SolidColor.swift; sourceTree = "<group>"; };
+		CCC80EFB2910146100B0B224 /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gradient.swift; path = Commands/Gradient.swift; sourceTree = "<group>"; };
+		CCC80F072910160F00B0B224 /* ChangeMenuBarColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeMenuBarColor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC9D8C03291013420093C417 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC80F06291015B900B0B224 /* Files in Frameworks */,
+				CCC80EED2910141800B0B224 /* ArgumentParser in Frameworks */,
+				CCC80F00291014FD00B0B224 /* Rainbow in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC9D8BFD291013420093C417 = {
+			isa = PBXGroup;
+			children = (
+				CC9D8C08291013420093C417 /* ChangeMenuBarColor */,
+				CC9D8C07291013420093C417 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC9D8C07291013420093C417 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC9D8C06291013420093C417 /* ChangeMenuBarColor */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC9D8C08291013420093C417 /* ChangeMenuBarColor */ = {
+			isa = PBXGroup;
+			children = (
+				CCC80F072910160F00B0B224 /* ChangeMenuBarColor.swift */,
+				CCC80EFB2910146100B0B224 /* Gradient.swift */,
+				CCC80EFA2910146100B0B224 /* SolidColor.swift */,
+				CCC80EF82910145800B0B224 /* Command.swift */,
+				CCC80EF02910144500B0B224 /* ImageFunctions.swift */,
+				CCC80EF32910144500B0B224 /* NSColor+HEX.swift */,
+				CCC80EF12910144500B0B224 /* NSImage+Extensions.swift */,
+				CCC80EF22910144500B0B224 /* NSScreen+Extensions.swift */,
+				CCC80EEE2910143800B0B224 /* Log.swift */,
+				CC9D8C09291013420093C417 /* main.swift */,
+			);
+			path = ChangeMenuBarColor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC9D8C05291013420093C417 /* ChangeMenuBarColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC9D8C0D291013420093C417 /* Build configuration list for PBXNativeTarget "ChangeMenuBarColor" */;
+			buildPhases = (
+				CC9D8C02291013420093C417 /* Sources */,
+				CC9D8C03291013420093C417 /* Frameworks */,
+				CC9D8C04291013420093C417 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChangeMenuBarColor;
+			packageProductDependencies = (
+				CCC80EEC2910141800B0B224 /* ArgumentParser */,
+				CCC80EFF291014FD00B0B224 /* Rainbow */,
+				CCC80F05291015B900B0B224 /* Files */,
+			);
+			productName = ChangeMenuBarColor;
+			productReference = CC9D8C06291013420093C417 /* ChangeMenuBarColor */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC9D8BFE291013420093C417 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					CC9D8C05291013420093C417 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = CC9D8C01291013420093C417 /* Build configuration list for PBXProject "ChangeMenuBarColor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC9D8BFD291013420093C417;
+			packageReferences = (
+				CCC80EEB2910141800B0B224 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				CCC80EFE291014FD00B0B224 /* XCRemoteSwiftPackageReference "Rainbow" */,
+				CCC80F04291015B900B0B224 /* XCRemoteSwiftPackageReference "Files" */,
+			);
+			productRefGroup = CC9D8C07291013420093C417 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC9D8C05291013420093C417 /* ChangeMenuBarColor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC9D8C02291013420093C417 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC80EF42910144500B0B224 /* ImageFunctions.swift in Sources */,
+				CCC80EEF2910143800B0B224 /* Log.swift in Sources */,
+				CCC80EF62910144500B0B224 /* NSScreen+Extensions.swift in Sources */,
+				CCC80EF52910144500B0B224 /* NSImage+Extensions.swift in Sources */,
+				CCC80EF92910145800B0B224 /* Command.swift in Sources */,
+				CCC80EFC2910146100B0B224 /* SolidColor.swift in Sources */,
+				CCC80EF72910144500B0B224 /* NSColor+HEX.swift in Sources */,
+				CC9D8C0A291013420093C417 /* main.swift in Sources */,
+				CCC80F082910160F00B0B224 /* ChangeMenuBarColor.swift in Sources */,
+				CCC80EFD2910146100B0B224 /* Gradient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CC9D8C0B291013420093C417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC9D8C0C291013420093C417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CC9D8C0E291013420093C417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CC9D8C0F291013420093C417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC9D8C01291013420093C417 /* Build configuration list for PBXProject "ChangeMenuBarColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9D8C0B291013420093C417 /* Debug */,
+				CC9D8C0C291013420093C417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC9D8C0D291013420093C417 /* Build configuration list for PBXNativeTarget "ChangeMenuBarColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9D8C0E291013420093C417 /* Debug */,
+				CC9D8C0F291013420093C417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CCC80EEB2910141800B0B224 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		CCC80EFE291014FD00B0B224 /* XCRemoteSwiftPackageReference "Rainbow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Rainbow.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		CCC80F04291015B900B0B224 /* XCRemoteSwiftPackageReference "Files" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/Files.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CCC80EEC2910141800B0B224 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCC80EEB2910141800B0B224 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		CCC80EFF291014FD00B0B224 /* Rainbow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCC80EFE291014FD00B0B224 /* XCRemoteSwiftPackageReference "Rainbow" */;
+			productName = Rainbow;
+		};
+		CCC80F05291015B900B0B224 /* Files */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCC80F04291015B900B0B224 /* XCRemoteSwiftPackageReference "Files" */;
+			productName = Files;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CC9D8BFE291013420093C417 /* Project object */;
+}
