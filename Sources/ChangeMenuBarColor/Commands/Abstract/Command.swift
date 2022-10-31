@@ -56,6 +56,10 @@ class Command {
             Log.error("Cannot read the currently set macOS wallpaper. Try providing a specific wallpaper as a parameter instead.")
             return nil
         }
+        
+        let rep = wallpaper.representations[0]
+        let imageSize = NSSize(width: rep.pixelsWide, height: rep.pixelsHigh)
+        wallpaper.size = imageSize
 
         Log.debug("Using currently set macOS wallpaper \(path)")
 
