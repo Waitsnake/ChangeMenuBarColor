@@ -46,18 +46,33 @@ final class Gradient: Command, ParsableCommand {
             Log.error("Invalid HEX color provided as gradient end color. Make sure it includes the '#' symbol, e.g: #FF0000")
             return nil
         }
-
-        guard let resizedWallpaper = wallpaper.crop(size: screen.size) else {
-            Log.error("Cannot not resize provided wallpaper to screen size")
-            return nil
+        
+        if (screen.size == wallpaper.size)
+        {
+            // no need for resize if size allready fits
+            // this helps to mitigate the degration of the picture
+            Log.debug("Generating gradient image from \(colorName(startColor)) to \(colorName(endColor))")
+            guard let topImage = createGradientImage(startColor: startColor, endColor: endColor, width: screen.size.width, height: screen.menuBarHeight) else {
+                return nil
+            }
+            
+            return combineImages(baseImage: wallpaper, addedImage: topImage)
         }
-
-        Log.debug("Generating gradient image from \(colorName(startColor)) to \(colorName(endColor))")
-        guard let topImage = createGradientImage(startColor: startColor, endColor: endColor, width: screen.size.width, height: screen.menuBarHeight) else {
-            return nil
+        else
+        {
+            
+            guard let resizedWallpaper = wallpaper.crop(size: screen.size) else {
+                Log.error("Cannot not resize provided wallpaper to screen size")
+                return nil
+            }
+            
+            Log.debug("Generating gradient image from \(colorName(startColor)) to \(colorName(endColor))")
+            guard let topImage = createGradientImage(startColor: startColor, endColor: endColor, width: screen.size.width, height: screen.menuBarHeight) else {
+                return nil
+            }
+            
+            return combineImages(baseImage: resizedWallpaper, addedImage: topImage)
         }
-
-        return combineImages(baseImage: resizedWallpaper, addedImage: topImage)
     }
 }
 
